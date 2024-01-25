@@ -7,4 +7,5 @@ urlpatterns = [
     path('register/', views.register),
     path('login/', views.MyTokenObtainPairSerializer.as_view()),
     path('refresh/', TokenRefreshView.as_view()),
+    path('<str:usernmae>/', views.UserDetailView.as_view())
 ]
